@@ -1,39 +1,102 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rock+Salt&display=swap');
+
+body {
+  font-family: 'Rock Salt', cursive;
+  margin:0;
+  padding: 0;
+  width:100%;
+}
+
+h1,
+h2,
+h3,
+.card-body > .card-title {
+  font-family: 'Rock Salt', cursive;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+h3 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-img-overlay .card-title {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-family: 'Rock Salt', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.site-footer {
+  padding: 20px 0;
+  margin-top: 2rem;
+  font-family: 'Rock Salt', cursive;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.navbar-brand {
+  max-width: 4rem;
+  margin-right: 2rem;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.navbar-brand img {
+  width: 250px;
+  margin-left: 50px;
+}
+
+.navbar-light {
+  margin-bottom: 2rem;
+  min-height: 8rem;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.nav-link {
+  font-family: 'Rock Salt', cursive;
+  font-size: 1.50rem;
+  color: rgb(60, 53, 53) !important;
+  padding-right: 20px !important;
+  padding-left: 5px !important;
+}
+
+
+.page-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: 300ms ease-out;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: 300ms ease-in;
+}
+
+.navStyle {
+  min-height: 80px;
+  margin-bottom: 20px;
+}
+
+.photo {
+  width: 1250px;
+}
+
+.headerRow {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
