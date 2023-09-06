@@ -51,7 +51,7 @@ function Example(args) {
   return (
     <Container>
         <Row className='d-flex justify-content-center'>
-            <Col md-10>
+            <Col md='10'>
                 <Carousel
                 activeIndex={activeIndex}
                 next={next}

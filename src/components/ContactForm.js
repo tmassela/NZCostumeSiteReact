@@ -25,14 +25,15 @@ const ContactForm = () => {
         >
             <Form>
                 <FormGroup row>
-                    <Label htmlFor='firstName' md='2'>
+                    <Label htmlFor='firstName' md='3'>
                         First Name
                     </Label>
-                    <Col md='10'>
+                    <Col md='9'>
                         <Field
                             name='firstName'
                             placeholder='First Name'
                             className='form-control'
+                            style={{ fontFamily: 'Arial' }}
                         />
                         <ErrorMessage name='firstName'>
                             {(msg) => <p className='text-danger'>{msg}</p>}
@@ -40,14 +41,16 @@ const ContactForm = () => {
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Label htmlFor='lastName' md='2'>
+                    <Label htmlFor='lastName' md='3'>
                         Last Name
                     </Label>
-                    <Col md='10'>
+                    <Col md='9'>
                         <Field
                             name='lastName'
                             placeholder='Last Name'
                             className='form-control'
+                            style={{ fontFamily: 'Arial' }}
+
                         />
                         <ErrorMessage name='lastName'>
                             {(msg) => <p className='text-danger'>{msg}</p>}
@@ -55,14 +58,15 @@ const ContactForm = () => {
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Label htmlFor='phoneNum' md='2'>
+                    <Label htmlFor='phoneNum' md='3'>
                         Phone
                     </Label>
-                    <Col md='10'>
+                    <Col md='9'>
                         <Field
                             name='phoneNum'
                             placeholder='Phone'
                             className='form-control'
+                            style={{ fontFamily: 'Arial' }}
                         />
                         <ErrorMessage name='phoneNum'>
                             {(msg) => <p className='text-danger'>{msg}</p>}
@@ -70,15 +74,16 @@ const ContactForm = () => {
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Label htmlFor='email' md='2'>
+                    <Label htmlFor='email' md='3'>
                         Email
                     </Label>
-                    <Col md='10'>
+                    <Col md='9'>
                         <Field
                             name='email'
                             placeholder='Email'
                             type='email'
                             className='form-control'
+                            style={{ fontFamily: 'Arial' }}
                         />
                         <ErrorMessage name='email'>
                             {(msg) => <p className='text-danger'>{msg}</p>}
@@ -99,6 +104,7 @@ const ContactForm = () => {
                             name='contactType'
                             as='select'
                             className='form-control'
+                            style={{ fontFamily: 'Arial' }}
                         >
                             <option>By Phone</option>
                             <option>By Email</option>
@@ -106,10 +112,10 @@ const ContactForm = () => {
                     </Col>
                 </FormGroup>
                 <FormGroup row>
-                    <Label htmlFor='feedback' md='2'>
+                    <Label htmlFor='feedback' md='3'>
                         Your Feedback
                     </Label>
-                    <Col md='10'>
+                    <Col md='9'>
                         <Field
                             name='feedback'
                             as='textarea'
