@@ -11,24 +11,20 @@ import { NavLink } from 'react-router-dom';
 import NZLogo from '../app/assets/img/NZLogo.png';
 import { Row } from 'reactstrap';
 
-const Header = () => {
+function Header(props) {
 
-    const [menuOpen, setMenuOpen] = useState(false);
+    const [collapsed, setCollapsed] = useState(true);
 
+    const toggleNavbar = () => setCollapsed(!collapsed);
     return(
-    <>
+    <div>
         <Navbar className='navStyle' sticky='top' expand='md' color='light'>
-            <NavbarBrand href='/'>
+            <NavbarBrand href="/">
                 <img src={NZLogo} alt='Expressenz logo' className='logo' />
             </NavbarBrand>
-            <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
-            <Collapse isOpen={menuOpen} navbar>
+            <NavbarToggler onClick={toggleNavbar} className="me-2" />
+            <Collapse isOpen={!collapsed} navbar>
                 <Nav className='ms-auto' navbar>
-                    <NavItem>
-                        <NavLink className='nav-link' to='/'>
-                            Home
-                        </NavLink>
-                    </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/jazz'>
                             Jazz
@@ -40,17 +36,38 @@ const Header = () => {
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/contact'>
-                            Contact
+                        <NavLink className='nav-link' to='/tap'>
+                            Tap
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink className='nav-link' to='/ballet'>
+                            Ballet
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink className='nav-link' to='/musicaltheater'>
+                            Musical Theater
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink className='nav-link' to='/hiphop'>
+                            Hip Hop
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink className='nav-link' to='/solo'>
+                            Solo/Duo/Trio
                         </NavLink>
                     </NavItem>
                 </Nav>
             </Collapse>
-            </Navbar>
-            <Row className='headerRow'>
-                <h3>Expressenz Booster Club Costume Resale</h3>
-            </Row>
-    </>
+        </Navbar>
+
+        <Row className='headerRow'>
+            <h1>Expressenz Booster Club Costume Resale</h1>
+        </Row>
+    </div>
 
     );
 }

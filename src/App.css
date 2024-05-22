@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
 
 body {
-  font-family: 'Rock Salt', cursive;
+  font-family: "Teachers", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <100>;
+  font-style: normal;
   margin:0;
   padding: 0;
   width:100%;
@@ -11,7 +17,7 @@ h1,
 h2,
 h3,
 .card-body > .card-title {
-  font-family: 'Rock Salt', cursive;
+  font-family: "Teachers", sans-serif;
 }
 
 .card-title {
@@ -19,14 +25,14 @@ h3,
   font-size: 1.25rem;
 }
 
-h3 {
+h1, h2, h3 {
   text-align: center;
 }
 
 .card-img-overlay .card-title {
   color: white;
   background-color: rgba(0, 0, 0, 0.75);
-  font-family: 'Rock Salt', cursive;
+  font-family: "Rock Salt", cursive;
 }
 
 .row-content {
@@ -38,7 +44,7 @@ h3 {
 .site-footer {
   padding: 20px 0;
   margin-top: 2rem;
-  font-family: 'Rock Salt', cursive;
+  font-family: "Teachers", sans-serif;
 }
 
 .navbar-brand {
@@ -59,7 +65,7 @@ h3 {
 }
 
 .nav-link {
-  font-family: 'Rock Salt', cursive;
+  font-family: "Teachers", sans-serif;
   font-size: 1.50rem;
   color: rgb(60, 53, 53) !important;
   padding-right: 20px !important;
@@ -100,3 +106,13 @@ h3 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.modal-header {
+  font-family: "Rock Salt", cursive;
+  }
+
+  .modal-footer {
+
+    text-align: center;
+    margin: auto 0;
+  }

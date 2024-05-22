@@ -19,3 +19,23 @@ export const selectJazzCostumes = () => {
 export const selectLyricalCostumes = () => {
     return COSTUMES.filter(costume => costume.style === 'lyrical')
 };
+
+export const selectTapCostumes = () => {
+    return COSTUMES.filter(costume => costume.style === 'tap')
+};
+
+export const selectBalletCostumes = () => {
+    return COSTUMES.filter(costume => costume.style === 'ballet')
+};
+
+export const selectMusicalTheaterCostumes = () => {
+    return COSTUMES.filter(costume => costume.style === 'musicaltheater')
+};
+
+export const selectHipHopCostumes = () => {
+    return COSTUMES.filter(costume => costume.style === 'hiphop')
+};
+
+export const selectSoloCostumes = () => {
+    return COSTUMES.filter(costume => costume.style === 'solo')
+};
