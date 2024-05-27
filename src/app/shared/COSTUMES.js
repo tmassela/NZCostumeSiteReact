@@ -357,17 +357,6 @@ export const COSTUMES = [
 
 
 
-    {
-        id: 14,
-        name: 'Bippity Boppity Boo',
-        image: boppityBoo,
-        image2: boppityBoo2,
-        image3: boppityBoo3,
-        image4: boppityBoo3,
-        description: 'Princess style two piece costume',
-        style: 'tap',
-        left: 5
-    },
 
     {
         id: 15,
